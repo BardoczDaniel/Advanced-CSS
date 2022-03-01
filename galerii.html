@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie</title>
+
+    <style>
+    body{
+        margin: 0;
+        padding: 0;
+        font-size: 1em;
+        font-family: sans-serif;
+        background-color: #dde1e7;
+        color: gray;
+    }
+
+    #container{
+        max-width: 960px;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    #row{
+        display: flex;
+        flex-flow: row wrap;
+        flex-direction: row;
+        
+    }
+
+    #column{
+        width: 20%;
+        box-sizing: border-box;
+        padding: 10px;
+    }
+
+    .box{
+    position: relative;
+    height: 144px;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    border-radius: 12px;
+    }
+
+
+    .box::after{
+    content: 'Image Title';
+    position: absolute;
+    bottom: 0;
+    background-color:white;
+    width: 100%;
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    }
+
+    p{
+    text-align: justify;
+    }
+
+    @media screen and (max-width:1024px) {
+
+        #column{
+            width: 33%;
+        }
+        
+    }
+
+    @media screen and (max-width:768px) {
+
+        #column{
+            width: 50%;
+        }
+
+        
+    }
+
+    @media screen and (max-width:414px) {
+
+        #column{
+            width: 100%;
+        }
+
+    } 
+    </style>
+
+
+    
+</head>
+<body>
+
+<!--Main container-->    
+    <div id="container">
+        <h1>GALLERY HEADING</h1>
+        <!--Row-->
+        <div id="row">
+        <!--Column container-->
+            <div id="column">
+                 <div class="box"> <img src="./placeholder-image.png" alt=""></div>
+
+            </div>
+        <!--Column container-->
+            <div id="column">
+                <div class="box"><img src="./placeholder-image.png" alt=""></div>
+
+            </div>
+        <!--Column container-->
+            <div id="column">
+                <div class="box"><img src="./placeholder-image.png" alt=""></div>
+              
+            </div>
+        <!--Column container-->
+            <div id="column">
+                <div class="box"><img src="./placeholder-image.png" alt=""></div>
+            
+            </div>
+        <!--Column container-->
+            <div id="column">
+                <div class="box"><img src="./placeholder-image.png" alt=""></div>
+              
+            </div>
+        <!--Column container-->
+            <div id="column">
+                <div class="box"><img src="./placeholder-image.png" alt=""></div>
+              
+            </div>
+        <!--Column container-->
+            <div id="column">
+                <div class="box"><img src="./placeholder-image.png" alt=""></div>
+              
+            </div>
+        
+        <!--Column container-->
+            <div id="column">
+                <div class="box"><img src="./placeholder-image.png" alt=""></div>
+          
+            </div>
+        <!--Column container-->
+            <div id="column">
+                <div class="box"><img src="./placeholder-image.png" alt=""></div>
+                
+            </div>
+        <!--Column container-->
+            <div id="column">
+                <div class="box"><img src="./placeholder-image.png" alt=""></div>
+            </div>
+        </div>
+
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores quo facere optio officiis ducimus molestias dolores aspernatur incidunt odit? Ut, sunt pariatur consequuntur facere quaerat officiis at, veniam optio eum possimus voluptate laudantium nihil minima obcaecati vitae minus, omnis asperiores. Ipsam quisquam, doloremque repudiandae facere fugit culpa magni deserunt quam ut dolore ex soluta similique eligendi facilis, ab quae quos totam consequuntur quis obcaecati laudantium doloribus deleniti voluptas! Rerum, dolorem assumenda quia in veniam natus consectetur similique mollitia ratione laudantium obcaecati quae perferendis aspernatur unde? Necessitatibus quasi impedit commodi repudiandae modi, ratione nisi expedita odio alias rem iste mollitia recusandae.</p>
+    
+    </div>
+
+  
+
+
+
+</body>
+</html>
